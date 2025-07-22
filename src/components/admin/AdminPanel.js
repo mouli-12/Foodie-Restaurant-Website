@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Typography, Tabs, Tab, Box } from '@mui/material';
 import AdminHeader from './AdminHeader';
 import CustomersPage from './CustomersPage';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Main from "./components/Public/Main"; // Handles internal public routes
 import AdminPanel from './components/admin/AdminPanel';

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Container } from '@mui/material';
 import Navbar from '../Global/Navbar';
 import RestaurantList from '../user/RestaurantList';

@@ -1,0 +1,90 @@
+/* --------------------------------- */
+/* PublicFooter.css                  */
+/* --------------------------------- */
+
+/* Footer Container */
+.footer-container {
+    background: linear-gradient(
+      120deg,
+      #8d6e63 0%,
+      #6d4966 50%,
+      #394b8f 100%
+    ) !important;
+    color: white;
+    padding: 4rem 0;
+    margin-top: 4rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Footer Content */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Footer Quote */
+  .foodie-footer-text {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    animation: fadeInText 1.5s ease-out forwards, scaleUp 1s ease-out forwards;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+  
+  /* Footer Description */
+  .footer-description {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Footer Note */
+  .footer-note {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: white !important;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-style: italic;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Footer Copyright */
+  .footer-copyright {
+    font-size: 0.9rem;
+    color: white !important;
+    font-weight: 300;
+    margin-top: 2rem;
+    font-style: italic;
+  }
+  
+  /* Keyframes for Animation */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

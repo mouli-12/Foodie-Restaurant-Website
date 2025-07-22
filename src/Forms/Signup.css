@@ -1,0 +1,70 @@
+/* Container */
+.signup-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form Box */
+.signup-form {
+  width: 100%;
+  max-width: 450px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  animation: fadeInSignup 0.6s ease-in-out;
+}
+
+/* Title */
+.signup-title {
+  font-family: 'Poppins', sans-serif;
+  color: #394b8f;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+.signup-field .MuiInputBase-root {
+  background-color: #fdfdfd;
+  border-radius: 8px;
+}
+
+.signup-field {
+  margin-bottom: 20px;
+}
+
+/* Button */
+.signup-btn {
+  background: linear-gradient(135deg, #8d6e63, #394b8f);
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6d4966, #2e3d7d);
+}
+
+/* Role Selection */
+.role-options {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Animation */
+@keyframes fadeInSignup {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

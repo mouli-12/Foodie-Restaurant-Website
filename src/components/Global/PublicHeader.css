@@ -1,0 +1,121 @@
+/* --------------------------------- */
+/* PublicHeader.css                  */
+/* --------------------------------- */
+
+/* AppBar Root: seamless multi-color gradient */
+.MuiAppBar-root {
+  background: linear-gradient(
+    120deg,
+    #8d6e63 0%,
+    #6d4966 50%,
+    #394b8f 100%
+  ) !important;
+  box-shadow: none !important;
+}
+
+/* Toolbar (over the gradient) */
+.public-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent !important;
+  z-index: 3;
+}
+
+/* Logo & Title */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.foodie-title {
+  color: white !important;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeInText 1.5s ease-out forwards, scaleUp 1s ease-out forwards;
+  font-size: 3.5rem; /* Increase size of the title */
+}
+
+/* Navigation Buttons */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  color: white !important;
+  border: 1px solid white !important;
+  border-radius: 25px !important;
+  padding: 6px 18px !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 3;
+}
+
+.nav-btn:hover {
+  background-color: white !important;
+  color: #8d6e63 !important; /* milk-tea green on hover */
+}
+
+/* Hero / Header Content: transparent so AppBar gradient shows through */
+.header-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  color: white;
+  overflow: hidden;
+  background: transparent !important;
+}
+
+/* Center Text */
+.header-center-text {
+  text-align: center;
+  z-index: 3;
+}
+
+.header-text {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem !important; /* Adjust font size for visibility */
+  color: white !important; /* Ensuring text is white */
+  animation: slideInDown 1s ease-out;
+}
+
+/* Keyframes */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

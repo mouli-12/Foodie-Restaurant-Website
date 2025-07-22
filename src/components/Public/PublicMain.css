@@ -1,0 +1,172 @@
+/* Container for entire public main section */
+.public-main-container {
+  background-color: white;
+  padding: 20px;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.search-bar {
+  width: 400px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search button */
+.search-button {
+  background-color: #8D6E63;
+  color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.search-button:hover {
+  transform: scale(1.1);
+}
+/* Center the search bar container */
+.search-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Style the search bar */
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-bar .MuiOutlinedInput-notchedOutline {
+  border-radius: 25px;
+}
+
+
+/* Introductory Text */
+.intro-text {
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Restaurant Cards */
+.restaurant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.restaurant-grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+.restaurant-card {
+  width: 400px;
+  height: 460px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.03);
+}
+
+.restaurant-card .MuiCardMedia-root {
+  height: 250px;
+  object-fit: cover;
+}
+
+.MuiCardContent-root {
+  padding: 14px !important;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.restaurant-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+}
+
+.MuiTypography-root {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Custom message box */
+.message-box {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e5fbe5;
+  color: #085c0c;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    top: -50px;
+    opacity: 0;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+.message-text::after {
+  content: " 😊";
+}
+
+/* Small heading */
+.section-heading {
+  text-align: left;
+  font-size: 25px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* Animated placeholder text */
+@keyframes placeholderFade {
+  0%, 25% { content: "Search by restaurant name"; }
+
+}
+
+input::placeholder {
+  color: #454444;
+  font-style: italic;
+  animation: placeholderFade 12s infinite;
+}

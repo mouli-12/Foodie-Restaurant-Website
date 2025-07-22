@@ -1,0 +1,101 @@
+/* --------------------------------- */
+/* Login.css                         */
+/* --------------------------------- */
+
+.login-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Login Form */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  animation: fadeInForm 0.6s ease-in-out;
+}
+
+.login-form .MuiTextField-root {
+  background-color: #fdfdfd;
+  border-radius: 8px;
+}
+
+.login-form .MuiFormHelperText-root {
+  font-size: 0.85rem;
+}
+
+/* Animated Login Button */
+.login-form .MuiButton-containedPrimary {
+  background: linear-gradient(135deg, #8d6e63, #394b8f);
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-form .MuiButton-containedPrimary:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6d4966, #2e3d7d);
+}
+
+/* Close/Back Button */
+.login-form .MuiButton-outlinedSecondary {
+  color: #394b8f;
+  border-color: #394b8f;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 12px;
+  width: 100%; /* Make button full width */
+}
+
+.login-form .MuiButton-outlinedSecondary:hover {
+  background-color: #f0f1f6;
+}
+
+
+/* Typography Enhancements */
+.login-title {
+  font-family: 'Poppins', sans-serif;
+  color: #394b8f;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Sign-up Link */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #6d4966;
+}
+
+.login-link a {
+  color: #8d6e63;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInForm {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
